@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: powderblue;
+}
+
+a {
+  color: #00B7FF;
+}
+p{
+  margin-top: 30px;
+  line-height: 20px;
+  text-decoration: inherit;
+  word-spacing: 5px;
+}
+.panel-body {
+    padding: 15px;
+    background-color: #20c75194;
+}

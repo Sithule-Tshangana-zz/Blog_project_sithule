@@ -1,0 +1,94 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/views.css'/>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="container"> -->
+
+        <div class="row">
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="/">South African Trendz</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="/archive">Archives</a></li>
+                <li><a href="/new">New Archive</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+        <div class="row">
+          <div class="jumbotron">
+            <h1>News Trendz</h1>
+            <button type="button" name="button"> <a href="/new">New Post</a> </button>
+          </div>
+        </div>
+
+        <div class="row">
+              <div class=" col-lg-12">
+                <div class="panel panel-primary">
+
+                  <div class="panel-heading">
+                  <center>     <h3 class="panel-title"><h3><%= posts.title %></h3></h3></center>
+                  </div>
+
+                  <div class="panel-body">
+                  <center>  <img src="<%=posts.image %>" alt=""width="100%" height=""></center>
+                    <p> <%-posts.content %></p>
+
+                <a href="/delete/<%= posts.id %>"><button type="button" class="btn btn-primary">Delete</button></a>
+                  <a href="/update/<%= posts.id %>"><button type="button" class="btn btn-primary">Edit</button></a>
+
+                  </div>
+                  <div class="panel-footer">
+                    <p>Author: <%- posts.author %></p>
+                    <p>Date: <%= posts.date %></p>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+              <footer>
+                <div class="social">
+                  <a href="#">
+                    <i class="icon ion-social-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="icon ion-social-snapchat"></i>
+                  </a>
+                  <a href="#">
+                    <i class="icon ion-social-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="icon ion-social-facebook"></i>
+                  </a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#"></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="navbar-brand" href="/">Trendz</a>
+                    </li>
+                    <li class="list-inline-item">
+                          <li><a href="/archive">Archives</a></li>
+                    </li>
+                    <li class="list-inline-item">
+                        <li><a href="/new">New Post</a></li>
+                    </li>
+                    <li class="list-inline-item">
+                  <li><a href="/contact">Contact</a></li>
+                    </li>
+                  </ul>
+                  <p class="copyright">Sithule Blogs 2018</p>
+                </div>
+              </footer>
+            </body>
+            </html>
